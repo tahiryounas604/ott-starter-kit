@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Details screen: title, description, metadata, Play button. -->
+<component name="DetailsScene" extends="Scene">
+  <interface>
+    <field id="apiBaseUrl" type="string" />
+    <field id="contentItem" type="node" />
+  </interface>
+  <children>
+    <Label id="titleLabel" translation="[60, 60]" font="font:LargeBoldSystemFont" width="1160" wrap="true" />
+    <Label id="metaLabel" translation="[60, 140]" font="font:MediumSystemFont" />
+    <Label id="descLabel" translation="[60, 200]" font="font:MediumSystemFont" width="1160" wrap="true" />
+    <Label id="playButton" text="▶  Play" translation="[60, 520]" font="font:LargeBoldSystemFont" />
+    <Label id="hintLabel" text="OK = Play   •   Back = Home" translation="[60, 620]" font="font:SmallSystemFont" />
+  </children>
+  <script type="text/brightscript" uri="pkg:/components/DetailsScene.brs" />
+</component>

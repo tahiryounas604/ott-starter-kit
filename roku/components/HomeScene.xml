@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Home grid: one RowList row per genre, populated by CatalogTask. -->
+<component name="HomeScene" extends="Scene">
+  <interface>
+    <field id="apiBaseUrl" type="string" />
+  </interface>
+  <children>
+    <Label id="titleLabel" text="OTT Starter Kit" translation="[40, 30]" font="font:LargeBoldSystemFont" />
+    <Label id="statusLabel" text="Loading catalog…" translation="[40, 90]" font="font:SmallSystemFont" />
+    <RowList id="rowList" translation="[40, 140]" itemSize="[1280, 200]" itemSpacing="[0, 30]" rowItemSize="[[240, 180]]" rowItemSpacing="[[16, 0]]" rowLabelOffset="[[0, 0]]" showRowLabel="[true]" rowLabelColor="0xFFFFFFFF" visible="false" />
+  </children>
+  <script type="text/brightscript" uri="pkg:/components/HomeScene.brs" />
+</component>

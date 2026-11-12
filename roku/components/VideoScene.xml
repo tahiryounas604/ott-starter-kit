@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Full-screen video player. Exits back to details on Back. -->
+<component name="VideoScene" extends="Scene">
+  <interface>
+    <field id="apiBaseUrl" type="string" />
+    <field id="contentId" type="integer" />
+    <field id="title" type="string" />
+  </interface>
+  <children>
+    <Video id="video" width="1280" height="720" />
+    <Label id="errorLabel" translation="[60, 60]" font="font:MediumSystemFont" visible="false" />
+  </children>
+  <script type="text/brightscript" uri="pkg:/components/VideoScene.brs" />
+</component>
